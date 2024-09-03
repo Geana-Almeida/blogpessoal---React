@@ -1,18 +1,26 @@
 import { InstagramLogo, LinkedinLogo, TiktokLogo } from "@phosphor-icons/react"
 
+import { ReactNode, useContext } from "react"
+import { AuthContext } from "../../contexts/AuthContext";
+
 function Footer() {
 
     let data = new Date().getFullYear()
 
-  return (
-    <div className="
-    flex
-    bg-indigo-900
-    justify-center
-    p-2
-    text-white
-    font-bold
-    ">
+    const { usuario  } = useContext(AuthContext)
+
+    let component: ReactNode;
+
+    if( usuario.token !== ""){
+        component = (
+        <div className="
+        flex
+        bg-indigo-900
+        justify-center
+        p-2
+        text-white
+        font-bold
+        ">
         <div className="flex flex-col items-center">
             <p>
                 Blog Pessoal Generation | Copyright: {data}
@@ -37,6 +45,13 @@ function Footer() {
             </div>
         </div>
     </div>
+    )
+    }
+
+  return (
+    <>
+        {component}
+    </>
   )
 }
 
