@@ -59,15 +59,15 @@ function Cadastro() {
 
       try{
         await cadastrarUsuario('/usuarios/cadastrar', usuario, setUsuario)
-        ToastAlerta("Usuário cadastrado com Sucesso!")
+        ToastAlerta("Usuário cadastrado com Sucesso!", 'sucesso')
 
       }catch(error){
-        ToastAlerta('Erro ao cadastrar o usuário!')
+        ToastAlerta('Erro ao cadastrar o usuário!', 'erro')
       }
     }
 
     else{
-      ToastAlerta("Dados inconsistentes! Verifique as informações do Cadastro.")
+      ToastAlerta("Dados inconsistentes! Verifique as informações do Cadastro.", 'info')
       setUsuario({...usuario, senha: ""})
       setConfirmaSenha("")
     }

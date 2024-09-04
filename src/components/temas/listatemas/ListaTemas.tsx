@@ -9,6 +9,7 @@ import { buscar } from "../../../services/Service";
 import { ToastAlerta } from "../../../utils/ToastAlerta";
 import CardTemas from "../cardtemas/CardTemas";
 
+
 function ListaTemas() {
   const [temas, setTemas] = useState<Tema[]>([]);
 

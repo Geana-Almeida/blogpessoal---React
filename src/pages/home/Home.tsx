@@ -1,7 +1,4 @@
-
-import ListaPostagens from '../../components/postagens/listapostagens/ListaPostagens';
-
-
+import ListaPostagens from "../../components/postagens/listapostagens/ListaPostagens";
 
 
 function Home() {
