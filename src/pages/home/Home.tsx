@@ -1,5 +1,5 @@
 
-import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';
+import ListaPostagens from '../../components/postagens/listapostagens/ListaPostagens';
 
 
 

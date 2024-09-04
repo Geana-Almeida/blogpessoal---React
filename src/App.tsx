@@ -8,7 +8,7 @@ import Login from "./pages/login/Login"
 import ListaTemas from "./components/temas/listatemas/ListaTemas"
 import FormTema from "./components/temas/formtema/FormTema"
 import DeletarTema from "./components/temas/deletartema/DeletarTema"
-import ListaPostagens from "./components/postagens/listaPostagens/ListaPostagens"
+import ListaPostagens from "./components/postagens/listapostagens/ListaPostagens"
 
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify"
