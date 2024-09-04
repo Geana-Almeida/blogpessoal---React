@@ -1,4 +1,6 @@
 import ListaPostagens from "../../components/postagens/listapostagens/ListaPostagens";
+import ModalPostagem from "../../components/postagens/modalpostagem/ModalPostagem";
+
 
 
 function Home() {
@@ -12,7 +14,9 @@ function Home() {
   
               <div className="flex justify-around gap-4">
               
-                <button className='rounded bg-white text-blue-800 py-2 px-4'>Ver postagens</button>
+                <div className="flex justify-around gap-4">
+                  <ModalPostagem />
+                </div>
               </div>
             </div>
   
