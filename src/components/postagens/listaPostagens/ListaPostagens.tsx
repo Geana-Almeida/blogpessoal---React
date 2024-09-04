@@ -5,7 +5,7 @@ import { useState, useContext, useEffect } from "react";
 import Postagem from "../../../models/Postagem";
 import { buscar } from "../../../services/Service";
 import { DNA } from "react-loader-spinner";
-import CardPostagem from "../cardPostagem/CardPostagem";
+import CardPostagem from "../cardpostagem/CardPostagem";
 import AuthContext from "../../../contexts/AuthContext";
  
 function ListaPostagens() {
